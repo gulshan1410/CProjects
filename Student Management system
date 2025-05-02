@@ -1,0 +1,50 @@
+#include"iostream.h"
+#include"conio.h"
+class Student
+{
+ char name[20],course[10],doa[20],phone[11];
+ int fee,id;
+ public:
+ Student()
+ {
+ cout<<"\nEnter name of student :";
+ cin>>name;
+ cout<<"Enter course of  student :";
+ cin>>course;
+ cout<<"Enter DOA of student :";
+ cin>>doa;
+ cout<<"Enter phone number of student :";
+ cin>>phone;
+ cout<<"Enter fee of the course  :";
+ cin>>fee;
+ cout<<"Enter id of student :";
+ cin>>id;
+ cout<<"Would you like to print invoice :";
+ char ch;
+ ch=getch();
+ putch(ch);
+ if(ch=='y'||ch=='Y')
+ {
+ clrscr();
+    cout<<"\nName of student is "<<name<<endl;
+    cout<<"course of student is "<<course<<endl;
+    cout<<"DOA of student is "<<doa<<endl;
+    cout<<"Phone of student is "<<phone<<endl;
+    cout<<"Fee of the course is "<<fee<<endl;
+    cout<<"Id of the student is "<<id<<endl;
+    cout<<"Addmission done!!"<<endl;
+    }
+    else
+    {
+    cout<<"\nThank for joining in  our course!!"<<endl;
+    }
+     }
+     };
+     void main()
+     {
+     clrscr();
+     Student s1;
+     getch();
+     }
+
+

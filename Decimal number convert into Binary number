@@ -1,0 +1,18 @@
+#include "stdio.h"
+#include "conio.h"
+void main()
+{
+int n,r,b=0,base=1;
+clrscr();
+printf("enter a decimal number : ");
+scanf("%d",&n);
+while(n>0)//5>0 (t)        2>0(t)      1>0(t)
+{
+r=n%2;  //5%2=1            2%2=0        1%2=1
+b=b+r*base; //0+1*1=1      1+0*10=10    10+1*100=1100
+n=n/2;       //5/2=2       2/2=1        1/2=0
+base=base*10; //1*10=10    10*10=100    100*10=1000
+}
+printf("binary number is %d",b);
+getch();
+}

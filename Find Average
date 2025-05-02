@@ -1,0 +1,14 @@
+#include"stdio.h"
+#include"conio.h"
+void main()
+{
+clrscr();
+int marks[]={66,55,44,77,87,88},total=0,avg,i;
+for(i=0;i<5;i++)
+{
+total=total+marks[i];
+avg=total/5;
+}
+printf("the average of marks is %d",avg);
+getch();
+}

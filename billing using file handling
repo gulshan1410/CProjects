@@ -1,0 +1,26 @@
+#include"stdio.h"
+#include"conio.h"
+void main()
+{
+char pn[20],name[30];
+int pq,pr,total=0;
+FILE *file;
+clrscr();
+printf("Enter customer name :");
+scanf("%s",&name);
+printf("Enter name of product :");
+scanf("%s",&pn);
+printf("Enter Quantity of product :");
+scanf("%d",&pq);
+printf("Enter rate of product :");
+scanf("%d",&pr);
+total=pq*pr;
+printf("\ntotal amount %d",total);
+file=fopen(name,"w");
+fprintf(file,"\nName of product is %s",pn);
+fprintf(file,"\nQuantity of product is %d",pq);
+fprintf(file,"\nRate of product is %d",pr);
+fprintf(file,"\nTotal amount you have to pay %d",total);
+fclose(file);
+getch();
+}
